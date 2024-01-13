@@ -14,3 +14,4 @@ function efectoHabilidades() {
 
 // Detecta el scrolling para aplicar la animación de la barra de habilidades
 window.addEventListener("scroll", efectoHabilidades);
+

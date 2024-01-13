@@ -58,13 +58,14 @@ html{
 /* SECCION I N I C I O */
 .inicio {
     background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
-    url('https://raw.githack.com/AgustinVelazquez0/OfPortFolio/main/portfolio-nick-main/1000_F_144420626_6IeqB1YI1dybAklBIPogMv2oRrMga8bX.jpg');
+    url('https://raw.githubusercontent.com/AgustinVelazquez0/AgustinVelazquez0.github.io/main/1000_F_144420626_6IeqB1YI1dybAklBIPogMv2oRrMga8bX.jpg');
     background-size: cover;
     height: 100vh;
     color: #fff;
     display: flex;
     align-items: center;
 }
+
 .inicio .contenido-banner{
     padding: 20px;
     background-color: #1e2326;
@@ -268,35 +269,14 @@ html{
     right: -15px;
     font-size: 14px;
 }
-.skills .skill .barra-skill {
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
+/* Estas clases se agregarán dinámicamente mediante JavaScript */
+
+.skills .skill .barra-skill .progreso {
+    width: 0%;
 }
 
-.skills .skill .progreso {
-    background-color: #1CB698;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-    width: 0;
-    animation: 2s forwards;
-}
-
-.skills .skill .barra-skill span {
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color: #1CB698;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
+.skills .skill .Javascript {
+    animation: Javascript 2s forwards;
 }
 
 @keyframes Javascript {
@@ -304,9 +284,17 @@ html{
     100% { width: 80%; }
 }
 
+.skills .skill .HTMLCSS {
+    animation: HTMLCSS 2s forwards;
+}
+
 @keyframes HTMLCSS {
     0% { width: 0%; }
     100% { width: 80%; }
+}
+
+.skills .skill .Python {
+    animation: Python 2s forwards;
 }
 
 @keyframes Python {
@@ -314,9 +302,17 @@ html{
     100% { width: 80%; }
 }
 
+.skills .skill .Comunication .progreso {
+    animation: Comunication 2s forwards;
+}
+
 @keyframes Comunication {
     0% { width: 0%; }
     100% { width: 95%; }
+}
+
+.skills .skill .Team_Work {
+    animation: Team_Work 2s forwards;
 }
 
 @keyframes Team_Work {
@@ -324,9 +320,17 @@ html{
     100% { width: 95%; }
 }
 
+.skills .skill .Creativity {
+    animation: Creativity 2s forwards;
+}
+
 @keyframes Creativity {
     0% { width: 0%; }
     100% { width: 80%; }
+}
+
+.skills .skill .Dedication {
+    animation: Dedication 2s forwards;
 }
 
 @keyframes Dedication {
@@ -334,10 +338,15 @@ html{
     100% { width: 0%; }
 }
 
+.skills .skill .ProyectManagement {
+    animation: ProyectManagement 2s forwards;
+}
+
 @keyframes ProyectManagement {
     0% { width: 0%; }
     100% { width: 80%; }
 }
+
 
 /* SECCION CURRICULUM */
 .curriculum{
