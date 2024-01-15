@@ -39,9 +39,7 @@
         <h1>Agustin Velazquez</h1>
         <h2>Developer Full-Stack</h2>
         <div class="redes">
-<a href="https://www.linkedin.com/in/agustin-vel%C3%A1zquez-173aaa1b5/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-<a href="https://www.instagram.com/agustin9velazquez/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-         
+<a href="https://www.linkedin.com/in/agustin-vel%C3%A1zquez-173aaa1b5/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>    
         </div>
     </div>
 </section>
@@ -109,9 +107,7 @@
                     // Utiliza la versión "raw" del enlace a tu PDF en GitHub
                     window.location.href = "https://raw.githubusercontent.com/AgustinVelazquez0/AgustinVelazquez0.github.io/main/Agustin%20velazquez%20cv.pdf";
                 });
-            </script>                      
-        </div>
-    </section>
+            </script>            
 
 <!-- SECCION SKILLS -->
 <section class="skills" id="skills">
@@ -270,7 +266,6 @@
                 <input type="text" placeholder="Your name:">
                 <input type="tel" placeholder="Telephone number:" id="phoneNumber">
                 <input type="email" placeholder="Mail address:">
-                <input type="text" placeholder="Message contact:">
                 <textarea id="message" cols="30" rows="10" placeholder="Message:"></textarea>
                 <button onclick="sendMessage()">Send message<i class="fa-solid fa-paper-plane"></i></button>
             </div>
@@ -288,7 +283,7 @@
 <!-- Script para enviar mensaje a través de WhatsApp -->
 <script>
     function sendMessage() {
-        const phoneNumber = "+598661715";
+        const phoneNumber = "+59898661715"; // Número de teléfono sin espacios
         const message = document.getElementById("message").value;
     
         // Abre una nueva ventana de WhatsApp con el número y mensaje
@@ -297,9 +292,10 @@
     
     function openWhatsApp() {
         // Abre una nueva ventana de WhatsApp con el número predefinido
-        window.open("https://wa.me/598661715", "_blank");
+        window.open("https://wa.me/+59898661715", "_blank"); // Número de teléfono sin espacios
     }
-    </script>
+</script>
+
     
     <!-- footer -->
     <footer>
@@ -308,7 +304,6 @@
         </a>
         <div class="redes">
             <a href="https://www.linkedin.com/in/agustin-vel%C3%A1zquez-173aaa1b5/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/agustin9velazquez/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
 
