@@ -611,6 +611,11 @@ html{
     font-size: 18px;
 }
 
+.info {
+    /* Aplica un margen negativo en la parte superior para mover el contenido hacia arriba */
+    margin-top: -107px; /* Ajusta según sea necesario */
+}
+
 .contacto button{
     cursor: pointer;
     background-color: transparent;
