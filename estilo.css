@@ -598,6 +598,9 @@ html{
     width: 50%;
     padding: 10px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .contacto .col input, .contacto .col textarea{
@@ -649,15 +652,18 @@ html{
     width: 100%;
 }
 
-.contacto .col .info{
-    position: absolute;
-    top: 40%;
-    background-color: #252A2E;
-    padding: 20px;
-    max-width: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.contacto .col .info {
+    position: relative; /* Cambiar de absolute a relative */
+    top: auto; /* Remover el top */
+    left: auto; /* Remover el left */
+    transform: none; /* Remover transform */
+    margin: 20px auto; /* Alinear al centro vertical y horizontalmente con un margen de 20px */
+    padding: 20px; /* Añadir padding */
+    background-color: #252A2E; /* Color de fondo */
+    max-width: 90%; /* Ajustar el ancho máximo */
+    border-radius: 10px; /* Añadir bordes redondeados si es necesario */
 }
+
 
 .contacto .col .info ul{
     list-style: none;
