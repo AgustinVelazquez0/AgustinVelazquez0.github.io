@@ -4,11 +4,17 @@
     font-family: 'Work Sans';
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    width: 100%;
 }
 
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
     scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
 }
 
 /* MENU */
@@ -19,6 +25,11 @@ html{
     top: 0;
     left: 0;
     z-index: 99;
+}
+
+h2 {
+    font-size: 1.5rem; /* Ajusta el tamaño según sea necesario */
+    overflow-wrap: break-word;
 }
 
 .contenedor-header header{
@@ -141,6 +152,7 @@ html{
     padding: 10px; /* Ajusta este valor según sea necesario */
     margin-top: 0px; /* Ajusta este valor según sea necesario */
     border: 2px solid #1CB698; /* Conserva el borde verde */
+    height: 17%;
 }
     
 
@@ -246,6 +258,7 @@ html{
     padding: 50px 20px;
     text-align: center;
 }
+
 .skills h1 {
     font-size: 36px;
     font-family: 'Righteous';
@@ -258,10 +271,14 @@ html{
     max-width: 1100px;
     margin: auto;
 }
+
 .col-skills {
+    display: flex;
+    flex-wrap: wrap;
     width: 48%;
     padding: 0 20px;
 }
+
 .col-skills h2 {
     font-size: 28px;
     font-family: 'Righteous';
@@ -792,6 +809,11 @@ footer .arriba{
 @media only screen and (max-width: 767px) {
     .contacto .col {
         margin-bottom: 20px; /* Puedes ajustar este valor según tus necesidades */
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
     }
 }
 
