@@ -22,6 +22,7 @@ body {
     background: #1f1f1f;
     position: fixed;
     width: 100%;
+    height: 68px;
     top: 0;
     left: 0;
     z-index: 99;
@@ -80,7 +81,7 @@ h2 {
     background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
     url('https://raw.githubusercontent.com/AgustinVelazquez0/AgustinVelazquez0.github.io/main/1000_F_144420626_6IeqB1YI1dybAklBIPogMv2oRrMga8bX.jpg');
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     color: #fff;
     display: flex;
     align-items: center;
@@ -147,6 +148,7 @@ h2 {
     max-width: 1100px;
     margin: auto;
     margin-bottom: 10; /* O cualquier otro valor que desees */
+   
 }
 
 .sobremi .contenido-seccion h2 {
