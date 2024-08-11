@@ -90,7 +90,7 @@ h2 {
 .inicio .contenido-banner {
     padding: 28px;
     background-color: #1e2326;
-    width: 241px;
+    max-width: 241px;
     margin-top: 110px;
     margin-left: auto;
     margin-right: auto;
@@ -288,6 +288,8 @@ h2 {
     flex-wrap: wrap;
     padding: 0 20px;
     height: 100%;
+    max-width: 450px;
+    min-width: 25%;
     flex-direction: column;
 }
 
