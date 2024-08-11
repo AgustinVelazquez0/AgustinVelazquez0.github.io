@@ -819,16 +819,33 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
-/* Estilos para dispositivos móviles (ancho máximo de 767px) */
-@media only screen and (max-width: 767px) {
-    .contacto .col {
-        margin-bottom: 20px; /* Puedes ajustar este valor según tus necesidades */
+    
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .skills {
+        padding: 10px;
     }
 
+    .contenido-seccion {
+        flex-direction: column;
+    }
 
-    body {
-        height: 100%;
-        width: 115%;
+    .col-skills {
+        width: 100%;
+    }
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .barra-skill {
+        width: 100%;
+    }
+
+    .progreso {
+        width: 100%; /* Ajusta el progreso al ancho del contenedor */
     }
 }
 
