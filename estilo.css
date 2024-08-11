@@ -145,6 +145,7 @@ h2 {
 }
 
 .sobremi .contenido-seccion{
+    padding-top: 20px;
     max-width: 1100px;
     margin: auto;
     margin-bottom: 10; /* O cualquier otro valor que desees */
@@ -279,6 +280,7 @@ h2 {
     max-width: 1100px;
     margin: auto;
     height: 100%;
+    padding: 0px 45px;
 }
 
 .col-skills {
