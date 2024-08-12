@@ -43,11 +43,16 @@ h2 {
     padding: 15px 20px;
 }
 
-.contenedor-header header .logo a{
-    font-family: 'Righteous';
-    font-size: 36px;
-    color: #1CB698;
+
+.logo {
     text-decoration: none;
+    font-size: 36px;
+    color: rgb(4, 132, 10); /* Color inicial del texto */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.logo:hover {
+    color: rgb(128, 0, 0); /* Color cuando el cursor está sobre el texto */
 }
 
 .contenedor-header header ul{
@@ -779,12 +784,6 @@ footer .arriba{
         flex-wrap: wrap;
     }
     
-    .contenedor-header header .logo a {
-        font-family: 'Righteous';
-        font-size: 36px;
-        color: #1CB698;
-        text-decoration: none;
-    }
 
 
     /* Sección curriculum */
