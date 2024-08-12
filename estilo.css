@@ -418,8 +418,8 @@ h2 {
     padding: 50px 20px;
 }
 
-.curriculum .contenido-seccion{
-    max-width: 1100px;
+.curriculum .contenido-seccion {
+    width: 80%;
     margin: auto;
 }
 
@@ -444,12 +444,14 @@ h2 {
     margin-bottom: 25px;
 }
 
-.curriculum .fila .izquierda{
+.curriculum .fila .izquierda {
     border-right: 2px solid #252A2E;
+    width: 50%;
 }
 
-.curriculum .fila .derecha{
+.curriculum .fila .derecha {
     border-left: 2px solid #252A2E;
+    width: 50%;
 }
 
 .curriculum .fila .item{
