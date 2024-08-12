@@ -89,10 +89,11 @@ h2 {
 }
 
 .inicio .contenido-banner {
-    height: 490px;
+    width: 30vh;
+    /* height: 490px; */
     padding: 28px;
     background-color: #1e2326;
-    max-width: 241px;
+    /* max-width: 241px; */
     /* margin-top: 20px; */
     margin-left: auto;
     margin-right: auto;
@@ -757,6 +758,15 @@ footer .arriba{
         overflow-x: hidden; /* Oculta el desbordamiento horizontal */
         margin: 0; /* Elimina el margen por defecto */
         padding: 0; /* Elimina el padding por defecto */
+    }
+
+    .contenedor-header {
+        background: #1f1f1f;
+        position: sticky;
+        height: 68px;
+        top: 0;
+        left: 0;
+        z-index: 99;
     }
 
     .contenedor-header header ul {
