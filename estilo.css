@@ -22,8 +22,7 @@ body {
 /* MENU */
 .contenedor-header{
     background: #1f1f1f;
-    
-    
+    position: sticky;
     height: 68px;
     top: 0;
     left: 0;
@@ -81,7 +80,7 @@ h2 {
 /* SECCION I N I C I O */
 .inicio {
     background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
-    url('https://raw.githubusercontent.com/AgustinVelazquez0/AgustinVelazquez0.github.io/main/1000_F_144420626_6IeqB1YI1dybAklBIPogMv2oRrMga8bX.jpg');
+    url('https://img.freepik.com/vector-gratis/fondo-negro-degradado-texturas-doradas_23-2149162753.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723248000&semt=ais_hybrid');
     background-size: cover;
     height: 80vh;
     color: #fff;
@@ -94,7 +93,7 @@ h2 {
     padding: 28px;
     background-color: #1e2326;
     max-width: 241px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -103,13 +102,13 @@ h2 {
 }
 
 
-.inicio .contenido-banner img{
+.inicio .contenido-banner img {
     margin-top: 40px;
-    border: 10px solid #024166;
+    border: 2px solid #024166;
     display: block;
     width: 50%;
     margin: auto;
-    border-radius: 100%;
+    border-radius: 40%;
 }
 
 .inicio .contenido-banner h1{
@@ -440,10 +439,6 @@ h2 {
     flex-wrap: nowrap;
 }
 
-.curriculum .fila .col{
-    
-}
-
 .curriculum .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
@@ -766,6 +761,7 @@ footer .arriba{
         padding: 0; /* Elimina el padding por defecto */
     }
 
+
     /* Sección curriculum */
     .curriculum {
         background-color: #1e2326;
@@ -871,6 +867,4 @@ footer .arriba{
     .nav-responsive {
         display: block;
     }
-
-    nav {
-      
+}
