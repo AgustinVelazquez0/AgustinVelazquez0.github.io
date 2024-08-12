@@ -147,12 +147,10 @@ h2 {
     width: 100%;
 }
 
-.sobremi .contenido-seccion{
-    padding-top: 20px;
-    
+.sobremi .contenido-seccion {
+    padding-top: 40px;
     margin: auto;
-    margin-bottom: 10; /* O cualquier otro valor que desees */
-   
+    margin-bottom: 10;
 }
 
 .sobremi .contenido-seccion h2 {
@@ -761,6 +759,21 @@ footer .arriba{
         padding: 0; /* Elimina el padding por defecto */
     }
 
+    .contenedor-header header ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        font-size: 10px;
+        flex-wrap: wrap;
+    }
+    
+    .contenedor-header header .logo a {
+        font-family: 'Righteous';
+        font-size: 36px;
+        color: #1CB698;
+        text-decoration: none;
+    }
+
 
     /* Sección curriculum */
     .curriculum {
@@ -859,11 +872,13 @@ footer .arriba{
         box-sizing: border-box;
     }
 
-    /* Otros ajustes */
     .contenedor-header header {
-        padding: 15px 10px; /* Ajusta el padding para pantallas pequeñas */
+        padding: 15px 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        /* justify-content: space-between; */
+        /* align-content: space-around; */
     }
-
     .nav-responsive {
         display: block;
     }
