@@ -180,10 +180,13 @@ h2 {
     color: #1CB698;
     font-weight: bold;
 }
-.sobremi .fila{
+
+.sobremi .fila {
     display: flex;
+    justify-content: space-around;
     margin-top: 30px;
 }
+
 .sobremi .fila .col {
     
     margin-top: 20px;
@@ -430,9 +433,10 @@ h2 {
 
 }
 
-.curriculum .fila{
+.curriculum .fila {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .curriculum .fila .col{
@@ -757,46 +761,108 @@ footer .arriba{
     html, body {
         width: 100%; /* Asegúrate de que el body tenga el ancho completo del viewport */
         overflow-x: hidden; /* Oculta el desbordamiento horizontal */
+        margin: 0; /* Elimina el margen por defecto */
+        padding: 0; /* Elimina el padding por defecto */
     }
 
     /* Sección curriculum */
-
     .curriculum {
         background-color: #1e2326;
         color: #fff;
-        
+        padding: 20px; /* Ajusta el padding para evitar el desbordamiento */
+        box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+    }
+
+    .curriculum .fila {
+        display: flex;
+        flex-direction: column; /* Apila los elementos en columna en pantallas pequeñas */
+        width: 100%;
+        margin: 0; /* Elimina el margen para evitar desbordamiento */
+        padding: 0 10px; /* Ajusta el padding para evitar el desbordamiento */
+        box-sizing: border-box;
     }
 
     /* Sobre mi Sección */
-    .sobremi .fila .col {
-        /* width: 50%; */
-        margin-top: 20px;
+    .sobremi {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        background-color: #1e2326;
+        color: #fff;
+        padding: 20px; /* Ajusta el padding para evitar el desbordamiento */
+        box-sizing: border-box;
+        width: 100%;
     }
 
-    .sobremi .fila .col .contenedor-intereses { 
+    .sobremi .fila {
         display: flex;
-        justify-content: end;
+        flex-direction: column; /* Apila los elementos en columna en pantallas pequeñas */
+        margin: 0; /* Elimina el margen para evitar desbordamiento */
+        padding: 0 10px; /* Ajusta el padding para evitar el desbordamiento */
+        box-sizing: border-box;
+    }
+
+    .sobremi .fila .col {
+        width: 100%; /* Asegúrate de que las columnas ocupen el 100% del ancho en pantallas pequeñas */
+        margin-top: 10px; /* Ajusta el margen según sea necesario */
+        padding: 10px; /* Añade padding para evitar que el contenido toque los bordes */
+        box-sizing: border-box;
+    }
+
+    .sobremi .fila .col .contenedor-intereses {
+        display: flex;
+        justify-content: center; /* Centra el contenido en lugar de alinearlo al final */
     }
 
     .sobremi .fila .col h3 {
-    text-align: end;
+        text-align: center; /* Centra el texto en lugar de alinearlo al inicio */
     }
 
-    .curriculum.fila {
-        
-        overflow: auto;
-    }
-
-    /*Sección contacto */
-
-    .contacto .fila { 
+    /* Sección contacto */
+    .contacto .fila {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
         width: 100%;
-        justify-content: center;
+        align-items: center; /* Centra los elementos en la fila */
+        padding: 0 10px; /* Ajusta el padding para evitar el desbordamiento */
+        box-sizing: border-box;
     }
 
+    .contacto .col {
+        width: 100%; /* Asegúrate de que las columnas ocupen el 100% del ancho en pantallas pequeñas */
+        padding: 10px; /* Ajusta el padding en el contenedor de contacto */
+        box-sizing: border-box;
+    }
+
+    /* Sección skills */
+    .skills {
+        background-color: #252A2E;
+        color: #fff;
+        text-align: center;
+        padding: 20px; /* Ajusta el padding para evitar el desbordamiento */
+        box-sizing: border-box;
+    }
+
+    .skills .contenido-seccion {
+        padding: 0 10px; /* Ajusta el padding para evitar el desbordamiento */
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+    }
+
+    /* Elimina el padding en col-skills */
+    .col-skills {
+        padding: 0; /* Elimina el padding para evitar desbordamiento */
+    }
+
+    /* Elimina el margen en la galería del portafolio */
+    .portfolio .galeria .proyecto {
+        max-width: 100%; /* Asegúrate de que los proyectos no excedan el ancho del contenedor */
+        margin: 5px; /* Ajusta el margen para pantallas pequeñas */
+        box-sizing: border-box;
+    }
+
+    /* Otros ajustes */
     .contenedor-header header {
         padding: 15px 10px; /* Ajusta el padding para pantallas pequeñas */
     }
@@ -806,47 +872,4 @@ footer .arriba{
     }
 
     nav {
-        display: none; /* Oculta el menú de navegación principal */
-    }
-
-    nav.responsive {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: #252A2E;
-        width: 180px;
-    }
-
-    .skills {
-        background-color: #252A2E;
-        color: #fff;
-        /* padding: 15px 0px; */
-        text-align: center;
-        
-    }
-
-    .skills .contenido-seccion, .sobremi .contenido-seccion {
-        padding: 0 10px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* align-items: flex-start; */
-    }
-}
-
-
-
-    .col-skills {
-        padding: 0; /* Elimina el padding para evitar desbordamiento */
-    }
-
-    .contacto .col {
-        padding: 10px; /* Ajusta el padding en el contenedor de contacto */
-    }
-
-    .portfolio .galeria .proyecto {
-        max-width: 100%; /* Asegúrate de que los proyectos no excedan el ancho del contenedor */
-        margin: 5px; /* Ajusta el margen para pantallas pequeñas */
-    }
-}
+      
