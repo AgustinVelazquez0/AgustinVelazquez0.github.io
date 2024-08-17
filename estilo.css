@@ -98,13 +98,13 @@ h2 {
     /* height: 490px; */
     padding: 28px;
     background-color: #1e2326;
-    /* max-width: 241px; */
+    max-width: 241px;
     /* margin-top: 20px; */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     border-radius: 40px;
-    max-height: 530px;
+    
 }
 
 
@@ -789,6 +789,7 @@ footer .arriba{
     /* Sección curriculum */
     .curriculum {
         background-color: #1e2326;
+        min-width: 80%;
         color: #fff;
         padding: 20px; /* Ajusta el padding para evitar el desbordamiento */
         box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
