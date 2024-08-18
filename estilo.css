@@ -163,7 +163,7 @@ h2 {
     margin-top: 0px;
     border: 2px solid #1CB698;
     max-height: 100%;
-    max-width: 100%;
+    min-width: 270px;
 }
     
 
