@@ -442,6 +442,10 @@ h2 {
     flex-wrap: nowrap;
 }
 
+.workH3 {
+    padding-left: 42px;
+}
+
 .curriculum .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
@@ -496,13 +500,13 @@ h2 {
     margin-left: 20px;
 }
 
-.curriculum .fila .item .conectori{
+.curriculum .fila .item .conectori {
     height: 2px;
     background-color: #1CB698;
-    width: 47px;
+    width: 28px;
     position: absolute;
     top: 50%;
-    right: -47px;
+    right: -29px;
     z-index: 5;
 }
 
@@ -517,13 +521,13 @@ h2 {
     bottom: 4px;
 }
 
-.curriculum .fila .item .conectord{
+.curriculum .fila .item .conectord {
     height: 2px;
     background-color: #1CB698;
-    width: 47px;
+    width: 27px;
     position: absolute;
     top: 50%;
-    left: -47px;
+    left: -28px;
     z-index: 5;
 }
 
@@ -536,6 +540,10 @@ h2 {
     float: left;
     position: relative;
     bottom: 4px;
+}
+
+.previsualizacion {
+    width: auto;
 }
 
 /* SECCION PORTFOLIO */
