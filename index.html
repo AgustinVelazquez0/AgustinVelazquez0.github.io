@@ -304,23 +304,28 @@
             </div>
 
 <!-- Formulario de contacto -->
-<div class="col">
+<div class="col contacto">
     <input type="text" id="name" name="name" placeholder="Your name:" autocomplete="name">
     <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Telephone number:" autocomplete="tel">
     <input type="email" id="email" name="email" placeholder="Mail address:" autocomplete="email">
     <textarea id="message" name="message" cols="30" rows="10" placeholder="Message:" autocomplete="message"></textarea>
-    <button onclick="sendMessage()">Send message<i class="fa-solid fa-paper-plane"></i></button>
+    <button onclick="sendMessage()">
+        <span class="overlay"></span>
+        Send message <i class="fa-solid fa-paper-plane"></i>
+    </button>
 </div>
 
-            <!-- WhatsApp -->
-            <div class="col">
-                <h3>WhatsApp</h3>
-                <p>Click the button below to open WhatsApp:</p>
-                <button onclick="openWhatsApp()">Open WhatsApp</button>
-            </div>
-        </div>
-    </div>
-</section>
+
+<!-- WhatsApp -->
+<div class="col">
+    <h3>WhatsApp</h3>
+    <p>Click the button below to open WhatsApp:</p>
+    <button onclick="openWhatsApp()">
+        <span class="overlay"></span>
+        Open WhatsApp
+    </button>
+</div>
+
 
 <!-- Script para enviar mensaje a través de WhatsApp -->
 <script>

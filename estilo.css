@@ -252,6 +252,7 @@ h2 {
     position: relative;
     z-index: 10;
 }
+
 .sobremi button .overlay{
     position: absolute;
     top: 0;
@@ -458,7 +459,7 @@ h2 {
 }
 
 .curriculum .fila .derecha {
-    border-left: 2px solid #252A2E;
+    border-left: 2px solid #1cb698;
     width: 50%;
 }
 
@@ -663,7 +664,7 @@ h2 {
     margin-top: -107px; /* Ajusta según sea necesario */
 }
 
-.contacto button{
+.contacto button {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
@@ -675,9 +676,11 @@ h2 {
     color: #fff;
     position: relative;
     z-index: 10;
+    overflow: hidden; /* Asegura que el overlay no se salga del botón */
+    transition: color 0.3s; /* Transición suave para el cambio de color del texto */
 }
 
-.contacto button .overlay{
+.contacto button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -685,12 +688,17 @@ h2 {
     height: 100%;
     background-color: #1CB698;
     z-index: -1;
-    transition: 1s;
+    transition: width 1s; /* Transición suave para el efecto de carga */
 }
 
-.contacto button:hover .overlay{
-    width: 100%;
+.contacto button:hover .overlay {
+    width: 100%; /* Expande el overlay al 100% al pasar el cursor */
 }
+
+.contacto button:hover {
+    color: #fff; /* Mantiene el color del texto blanco */
+}
+
 
 .contacto .col img{
     width: 100%;
