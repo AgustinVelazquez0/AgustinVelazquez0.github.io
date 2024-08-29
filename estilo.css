@@ -47,7 +47,7 @@ h2 {
 .logo {
     text-decoration: none;
     font-size: 36px;
-    color: rgb(4, 132, 10); /* Color inicial del texto */
+    color: rgb(28 182 152);
     transition: color 0.3s; /* Transición suave para el cambio de color */
 }
 
