@@ -352,19 +352,21 @@ h2 {
     display: block;
     margin-bottom: 10px;
 }
+
 .skills .skill .barra-skill {
-    height: 8px;
+    height: 4px;
     width: 100%;
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
 }
+
 .skills .skill .progreso {
     background-color: #1CB698;
     position: absolute;
     top: 0;
     left: 0;
-    height: 8px;
+    height: 4px;
 }
 .skills .skill .barra-skill span {
     position: absolute;
