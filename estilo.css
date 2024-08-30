@@ -72,7 +72,6 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
 }
 
 .logo {
@@ -489,7 +488,7 @@ h2 {
 }
 
 .curriculum .fila .col h3{
-    font-size: 28px;
+    font-size: 20px;
     font-family: 'Righteous';
     margin-bottom: 25px;
 }
