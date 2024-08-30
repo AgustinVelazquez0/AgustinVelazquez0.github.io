@@ -4,7 +4,6 @@
     font-family: 'Work Sans';
     margin: 0;
     padding: 0;
-    line-height: 1.6;
     flex-wrap: wrap;
 }
 
@@ -15,18 +14,51 @@ html{
     height: 100%;
 }
 
+#nav {
+    display: flex;
+    padding: 15px 20px;
+}
+
 body {
     width: 100%;
 }
+
+header {
+    width: 100%;
+    height: 100%;
+}
+
+#dark-mode-toggle {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-image: url('https://img.icons8.com/ios-filled/50/do-not-disturb-2.png');
+    background-size: cover;
+    cursor: pointer;
+    transition: filter 0.3s ease; /* Añade una transición suave */
+}
+
+/* Cambiar el color de la imagen al pasar el cursor por encima del botón */
+#dark-mode-toggle:hover {
+    filter: invert(1); /* Esto invertirá los colores de la imagen */
+}
+
+.Dark-Mode {
+    width: 50px;
+}
+
+.Dark-Mode h4 {
+    margin-left: 7px;
+    margin-bottom: 5px;
+    color: #1ca98d;
+}
+
 
 /* MENU */
 .contenedor-header{
     background: #1f1f1f;
     position: sticky;
-    height: 68px;
-    top: 0;
-    left: 0;
-    z-index: 99;
+    height: 100%;
 }
 
 h2 {
@@ -43,12 +75,20 @@ h2 {
     padding: 15px 20px;
 }
 
-
 .logo {
+    font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 40px;
     color: rgb(28 182 152);
-    transition: color 0.3s; /* Transición suave para el cambio de color */
+    transition: color 0.3s;
+    display: flex;
+}
+
+.logo a {
+    padding-bottom: 10px;
 }
 
 .logo:hover {
@@ -61,11 +101,14 @@ h2 {
 }
 
 .contenedor-header header nav ul li a{
-    text-align: none;
     color: #fff;
     margin: 0 15px;
     transition: .5s;
-    text-decoration: none;
+    font-family: "Oswald", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
 .contenedor-header header nav ul li a:hover{
@@ -83,11 +126,12 @@ h2 {
 
 .inicio {
     background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(https://img.freepik.com/vector-gratis/fondo-negro-degradado-texturas-doradas_23-2149162753.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723248000&semt=ais_hybrid);
-    background-size: cover;
     min-height: 65vh;
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .inicio .contenido-banner {
@@ -97,8 +141,6 @@ h2 {
     background-color: #1e2326;
     min-width: 241px;
     /* margin-top: 20px; */
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     border-radius: 40px;
     
@@ -770,6 +812,106 @@ footer .arriba{
     font-size: 18px;
 }
 
+/* Dark Mode */ 
+
+/* Estilos para modo oscuro */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Aseguramos que los colores específicos también se ajusten en modo oscuro */
+
+body.dark-mode .contenedor-header {
+    background-color: #333;
+}
+
+body.dark-mode .contenedor-header header nav ul li a {
+    color: #0e0c0c;
+}
+
+body.dark-mode .contenedor-header header nav ul li a:hover {
+    color: #1CB698;
+}
+
+body.dark-mode .inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(https://img.freepik.com/vector-gratis/fondo-negro-degradado-texturas-doradas_23-2149162753.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723248000&semt=ais_hybrid);
+    color: #fff;
+}
+
+body.dark-mode .inicio .contenido-banner {
+    background-color: #1e2326;
+}
+
+body.dark-mode .inicio .contenido-banner .redes a {
+    color: #ccc;
+    border-color: #ccc;
+}
+
+body.dark-mode .inicio .contenido-banner .redes a:hover {
+    background-color: #1CB698;
+}
+
+body.dark-mode .sobremi {
+    background-color: #333;
+    color: #ccc;
+}
+
+body.dark-mode .sobremi .contenido-seccion h2 {
+    border-color: #1CB698;
+}
+
+body.dark-mode .skills {
+    background-color: #444;
+    color: #ccc;
+}
+
+body.dark-mode .skills h1 {
+    color: #1CB698;
+}
+
+body.dark-mode .skills .skill .barra-skill {
+    background-color: #555;
+}
+
+body.dark-mode .curriculum {
+    background-color: #333;
+    color: #ccc;
+}
+
+body.dark-mode .curriculum h2 {
+    border-color: #1CB698;
+}
+
+body.dark-mode .curriculum .fila .item {
+    background-color: #444;
+}
+
+body.dark-mode .curriculum .fila .item .casa {
+    color: #1CB698;
+}
+
+body.dark-mode .curriculum .fila .item .fecha {
+    color: #1CB698;
+}
+
+body.dark-mode .curriculum .fila .item .conectori, 
+body.dark-mode .curriculum .fila .item .conectord {
+    background-color: #1CB698;
+}
+
+body.dark-mode .curriculum .fila .item .conectori .circuloi, 
+body.dark-mode .curriculum .fila .item .conectord .circulod {
+    background-color: #1CB698;
+}
+
+body.dark-mode .contacto {
+    background-color: #333;
+}
+
+
+
+
 /* Media queries para dispositivos móviles */
 @media screen and (max-width: 980px) {
     html, body {
@@ -788,15 +930,17 @@ footer .arriba{
         z-index: 99;
     }
 
-    .contenedor-header header ul {
-        display: flex;
-        list-style: none;
-        flex-direction: row;
-        font-size: 12px;
-        flex-wrap: wrap;
-    }
+    @media screen and (max-width: 980px) {
+        .contenedor-header header ul {
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+        }
     
-
+        .contenedor-header header ul li {
+            font-size: 14px; /* Ajusta el tamaño según tu preferencia */
+        }
+    }
 
     /* Sección curriculum */
     .curriculum {
@@ -896,12 +1040,24 @@ footer .arriba{
         box-sizing: border-box;
     }
 
-    .contenedor-header header {
-        padding: 15px 10px;
+    #nav {
         display: flex;
-        flex-wrap: nowrap;
-        /* justify-content: space-between; */
-        /* align-content: space-around; */
+        /* padding: 15px 20px; */
+        max-width: 50%;
+        min-height: 100%;
+        padding: 0;
+    }
+
+
+    @media screen and (max-width: 980px) {
+        .contenedor-header header {
+            padding: 15px 10px;
+            display: flex;
+            width: 100%;
+            /* justify-content: space-between; */
+            /* align-content: space-around; */
+            height: 100%;
+        }
     }
     .nav-responsive {
         display: block;
