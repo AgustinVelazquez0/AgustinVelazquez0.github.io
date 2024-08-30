@@ -59,6 +59,7 @@ header {
     background: #1f1f1f;
     position: sticky;
     height: 100%;
+    width: 100%;
 }
 
 h2 {
@@ -319,8 +320,14 @@ h2 {
     font-size: 36px;
     font-family: 'Righteous';
     color: #1CB698;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
+
+.skill i {
+    margin-right: 8px;
+    font-size: 2em; /* Ajusta el tamaño aquí */
+}
+
 
 .skills .contenido-seccion {
     display: flex;
@@ -339,6 +346,7 @@ h2 {
     max-width: 450px;
     min-width: 25%;
     flex-direction: column;
+    gap: 20px;
 }
 
 .col-skills h2 {
@@ -349,7 +357,6 @@ h2 {
 .skills .skill > span {
     font-weight: bold;
     display: block;
-    margin-bottom: 10px;
 }
 
 .skills .skill .barra-skill {
@@ -468,13 +475,13 @@ h2 {
     margin: auto;
 }
 
-.curriculum h2{
+.curriculum h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-    border: 1px solid rgb(137, 228, 0);
-
+    border: 1px solid rgb(28 182 152);
+    margin-bottom: 45px;
 }
 
 .curriculum .fila {
@@ -667,12 +674,13 @@ h2 {
     margin: auto;
 }
 
-.contacto h2{
+.contacto h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
-    border: 1px solid rgb(50, 232, 0);
+    border: 1px solid rgb(28 182 152);
+    margin-bottom: 25px;
 }
 
 .contacto .fila{
