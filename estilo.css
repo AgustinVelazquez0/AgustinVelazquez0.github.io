@@ -481,6 +481,7 @@ h2 {
     padding: 20px 0;
     border: 1px solid rgb(28 182 152);
     margin-bottom: 45px;
+    min-width: 291px;
 }
 
 .curriculum .fila {
@@ -501,7 +502,7 @@ h2 {
 
 .curriculum .fila .izquierda {
     border-right: 2px solid #252A2E;
-    width: 50%;
+    width: 100%;
 }
 
 .curriculum .fila .derecha {
@@ -537,9 +538,10 @@ h2 {
     line-height: 24px;
 }
 
-.curriculum .fila .izq{
+.curriculum .fila .izq {
     border-right: 2px solid #1CB698;
     margin-right: 20px;
+    min-width: 90%;
 }
 
 .curriculum .fila .der{
@@ -961,7 +963,7 @@ body.dark-mode .contacto {
 
     .curriculum .fila .derecha {
         border-left: 2px solid #252A2E;
-        width: 50%;
+        min-width: 100%;
     }
 
     .curriculum .fila {
