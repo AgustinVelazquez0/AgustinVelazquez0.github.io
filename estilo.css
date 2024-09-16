@@ -55,11 +55,12 @@ header {
 
 
 /* MENU */
-.contenedor-header{
-    background: #1f1f1f;
+.contenedor-header {
+    background: #000000;
     position: sticky;
     height: 100%;
     width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde blanco muy suave con opacidad del 20% */
 }
 
 h2 {
@@ -116,6 +117,7 @@ h2 {
     color: #1CB698;
 }
 
+
 .nav-responsive{
     background-color: #1CB698;
     color:#fff;
@@ -126,7 +128,7 @@ h2 {
 }
 
 .inicio {
-    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)), url(https://img.freepik.com/vector-gratis/fondo-negro-degradado-texturas-doradas_23-2149162753.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723248000&semt=ais_hybrid);
+    background: linear-gradient(to top, rgb(30 35 38), rgb(30 35 38 / 0%)), url(https://xmple.com/wallpaper/gradient-hexagon-black-gray-glow-6016x3384-c4-000000-cccccc-444444-000000-l2-1-29-a-45-f-6.svg);
     min-height: 65vh;
     color: #fff;
     display: flex;
@@ -139,19 +141,19 @@ h2 {
     width: 30vh;
     /* height: 490px; */
     padding: 28px;
-    background-color: #1e2326;
+    background-color: #000000;
     min-width: 241px;
-    /* margin-top: 20px; */
+    margin-top: 20px;
     text-align: center;
     border-radius: 40px;
-    
+    opacity: 0.5;
 }
 
 .inicio .contenido-banner img {
     margin-top: 40px;
     border: 2px solid #1ca98d;
     display: block;
-    width: 50%;
+    width: 80%;
     margin: auto;
     border-radius: 5%;
 }
