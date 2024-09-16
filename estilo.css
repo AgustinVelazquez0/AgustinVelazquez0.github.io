@@ -57,10 +57,12 @@ header {
 /* MENU */
 .contenedor-header {
     background: #000000;
-    position: sticky;
-    height: 100%;
+    position: fixed;
+    top: 0;
     width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde blanco muy suave con opacidad del 20% */
+    height: 60px; /* Ajusta la altura del header */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1000;
 }
 
 h2 {
@@ -135,6 +137,7 @@ h2 {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    padding-top: 60px; /* Ajusta según la altura del header */
 }
 
 .inicio .contenido-banner {
@@ -195,7 +198,7 @@ h2 {
 }
 
 .sobremi .contenido-seccion {
-    padding-top: 40px;
+    padding-top: 58px;
     margin: auto;
     margin-bottom: 10;
 }
@@ -313,10 +316,10 @@ h2 {
 .skills {
     background-color: #252A2E;
     color: #fff;
-    padding: 15px 0px;
+    padding-top: 22px;
     text-align: center;
     min-height: 485px;
-    
+    scroll-margin-top: 60px; /* Ajusta según la altura del header */
 }
 
 .skills h1 {
@@ -475,6 +478,7 @@ h2 {
 .curriculum .contenido-seccion {
     min-width: 85%;
     margin: auto;
+    padding-top: 13px;
 }
 
 .curriculum h2 {
@@ -676,6 +680,7 @@ h2 {
 .contacto .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+    padding-top: 13px;
 }
 
 .contacto h2 {
