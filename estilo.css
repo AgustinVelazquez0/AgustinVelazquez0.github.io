@@ -935,13 +935,14 @@ body.dark-mode .contacto {
     }
 
     .contenedor-header {
-        background: #1f1f1f;
+        background: #000000;
         position: sticky;
         min-height: 100px;
         top: 0;
         left: 0;
         z-index: 99;
         min-width: 415px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .logo {
