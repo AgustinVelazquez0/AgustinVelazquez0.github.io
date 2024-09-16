@@ -939,9 +939,13 @@ body.dark-mode .contacto {
         padding: 0; /* Elimina el padding por defecto */
     }
 
+    .inicio {
+        padding-top: 105px;
+    }
+
     .contenedor-header {
         background: #000000;
-        position: sticky;
+        position: fixed;
         min-height: 100px;
         top: 0;
         left: 0;
