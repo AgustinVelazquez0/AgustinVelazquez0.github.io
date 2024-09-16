@@ -952,11 +952,9 @@ body.dark-mode .contacto {
             display: flex;
             list-style: none;
             flex-direction: row;
+            gap: 0px;
         }
     
-        .contenedor-header header ul li {
-            font-size: 14px; /* Ajusta el tamaño según tu preferencia */
-        }
     }
 
     /* Sección curriculum */
@@ -1066,7 +1064,7 @@ body.dark-mode .contacto {
     #nav {
         display: flex;
         /* padding: 15px 20px; */
-        max-width: 50%;
+        max-width: 100%;
         min-height: 100%;
         padding: 0;
     }
