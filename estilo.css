@@ -478,7 +478,7 @@ h2 {
 .curriculum .contenido-seccion {
     min-width: 85%;
     margin: auto;
-    padding-top: 13px;
+    padding-top: 15px;
 }
 
 .curriculum h2 {
@@ -943,6 +943,7 @@ body.dark-mode .contacto {
         padding-top: 105px;
     }
 
+
     .contenedor-header {
         background: #000000;
         position: fixed;
@@ -976,6 +977,7 @@ body.dark-mode .contacto {
         color: #fff;
         padding: 20px; /* Ajusta el padding para evitar el desbordamiento */
         box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+        scroll-margin-top: 70px;
     }
 
     .curriculum .fila .derecha {
@@ -1001,6 +1003,12 @@ body.dark-mode .contacto {
         padding: 20px; /* Ajusta el padding para evitar el desbordamiento */
         box-sizing: border-box;
         width: 100%;
+        padding-top: 40px;
+        scroll-margin-top: 60px; /* Ajusta según la altura del header */
+    }
+
+    .sobremi .contenido-seccion {
+        padding-top: 0px;
     }
 
     .sobremi .fila {
@@ -1043,6 +1051,11 @@ body.dark-mode .contacto {
         box-sizing: border-box;
     }
 
+    .contacto {
+        scroll-margin-top: 65px; /* Ajusta según la altura del header */
+        padding-top: 27px;
+    }
+
     /* Sección skills */
     .skills {
         background-color: #252A2E;
@@ -1050,6 +1063,8 @@ body.dark-mode .contacto {
         text-align: center;
         padding: 20px; /* Ajusta el padding para evitar el desbordamiento */
         box-sizing: border-box;
+        padding-top: 45px;
+        scroll-margin-top: 60px; /* Ajusta según la altura del header */
     }
 
     .skills .contenido-seccion {
